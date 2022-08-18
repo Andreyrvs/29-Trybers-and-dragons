@@ -10,27 +10,16 @@ class PVP extends Battle {
   }
 
   fight(): number {
-    if (super.player.lifePoints > 0 && this._player2.lifePoints > 0) {
-      let index = super.player.lifePoints;
-      for (index; index !== this._player2.lifePoints; index += 1) {
-        super.player.attack(this._player2);
-        this._player2.attack(super.player);
-      }
+    for (let index = 0; this.player.lifePoints > 0 
+      && this._player2.lifePoints > 0; index += 1) {
+      this.player.attack(this._player2);     
+      this._player2.attack(this.player);
+    }    
+    if (this.player.lifePoints === -1) {
+      return -1;
     }
-    if (super.player.lifePoints === -1) return -1;
-    
     return 1;
   }
 }
-// super.player.attack(this._player2), 
-// this._player2.attack(super.player)
-export default PVP;
 
-// super.player.receiveDamage(this._player2.strength);
-// this._player2.receiveDamage(super.player.strength);
-// if (super.fight() === 1) {
-//   return console.log('Player 1 wins');
-// }
-// if (super.fight() === -1) {
-//   return console.log('Player 2 wins');
-// }
+export default PVP;
