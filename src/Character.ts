@@ -97,8 +97,3 @@ class Character implements Fighter {
 }
 
 export default Character;
-
-const a = new Character('Andrey');
-a.receiveDamage(22);
-
-console.log(a);
