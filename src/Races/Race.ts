@@ -22,6 +22,12 @@ abstract class Race {
   public set dexterity(value : number) {
     this._dexterity = value;
   }
+
+  static createdRacesInstances(): number {
+    throw new Error('Not implemented');
+  }
+
+  public abstract get maxLifePoints(): number; 
 }
 
 export default Race;
