@@ -1,8 +1,4 @@
 abstract class Race {
-  // readonly _name: string; 
-  // readonly _dexterity: number;
-  // static _createdRacesInstances: number;
-  
   constructor(private _name: string, private _dexterity: number) { }
   
   public get name() : string {
