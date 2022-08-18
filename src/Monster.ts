@@ -29,8 +29,8 @@ class Monster implements SimpleFighter {
     return this._lifePoints;
   }
 
-  attack(enemy: SimpleFighter) {
-    return this._lifePoints - enemy.strength;
+  attack(enemy: SimpleFighter): void {
+    enemy.receiveDamage(this._strength);
   }
 }
 
