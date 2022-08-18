@@ -1,16 +1,33 @@
-# 🚧 README em construção 🚧
+# Trybers and Dragons
 
-<!-- Olá, Tryber!
+## Contexto
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+Este projeto é aplicado os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecido como jogos `RPG` (Role Playing Game).
 
-É essencial que você preencha esse documento por conta própria, ok?
+## Técnologias usadas
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+Back-end:
+> Desenvolvido usando: Typescript, POO, SOLID
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+## Instalando Dependências
 
--->
+* clone o projeto:
+
+```bash
+git clone git@github.com:Andreyrvs/trybers-and-dragons.git
+```
+
+> Backend
+
+  ```bash
+    cd trybers-and-dragons
+    npm install
+  ```
+
+## Executando aplicação
+
+* Para rodar o back-end:
+
+```bash
+  npm start
+```
