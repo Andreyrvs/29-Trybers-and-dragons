@@ -10,17 +10,9 @@ abstract class Race {
     return this._name;
   }
   
-  // public set name(value : string) {
-  //   this._name = value;
-  // }
-  
   public get dexterity() : number {
     return this._dexterity;
   }
-  
-  // public set dexterity(value : number) {
-  //   this._dexterity = value;
-  // }
 
   static createdRacesInstances(): number {
     throw new Error('Not implemented');
