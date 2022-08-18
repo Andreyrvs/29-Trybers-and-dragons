@@ -1,11 +1,10 @@
-import Fighter from '../Fighter';
-import Monster from '../Monster';
+import Fighter, { SimpleFighter } from '../Fighter';
 import Battle from './Battle';
 
 class PVE extends Battle {
   private _characterFighter: Fighter;
-  private _monster: Monster[];
-  constructor(characterFighter: Fighter, monster: Monster[]) {
+  private _monster: (Fighter | SimpleFighter)[];
+  constructor(characterFighter: Fighter, monster: (Fighter | SimpleFighter)[]) {
     super(characterFighter);
     this._characterFighter = characterFighter;
     this._monster = monster;
