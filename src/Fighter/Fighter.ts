@@ -1,6 +1,7 @@
 import Energy from '../Energy';
+import SimpleFithter from './SimpleFighter';
 
-export default interface Fighter {
+export default interface Fighter extends SimpleFithter {
   lifePoints: number
   strength: number
   defense: number
