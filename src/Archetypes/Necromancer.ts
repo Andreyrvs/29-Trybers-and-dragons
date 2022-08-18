@@ -20,7 +20,7 @@ class Necromancer extends Archetype {
     this._createdArchetypeInstances += 1;
   }
 
-  static createdRacesInstances() {
+  static createdArchetypeInstances() {
     return this._createdArchetypeInstances;
   }
 }
