@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Este projeto é aplicado os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecido como jogos `RPG` (Role Playing Game).
+Este projeto é aplicado os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecido como jogos `RPG` (Role Playing Game) :crossed_swords: :dragon:.
 
 <!-- 
 > Utiliza a API []()
@@ -24,10 +24,20 @@ Back-end:
 
 Adquiri essas habilidades ao desenvolver esse projeto:
 
-## Preview da Aplicação
+- O conhecimento dos pilares da Programação Orientada a Objetos: Herança, Abstração, Encapsulamento e Polimorfismo.
+
+- A habilidade de criar e utilizar Interface;
+
+- A habilidade de utilizar Composição;
+
+- Implementar, em TypeScript, Classes, Instâncias, Atributos, Métodos e Objetos;
+
+- O conhecimento e aplicação dos princípios SOLID.
+
+<!-- ## Preview da Aplicação
 
 | ![Login](./aplicacao-) | ![Home](./aplicacao-) |
-| ----------- | ----------- |
+| ----------- | ----------- | -->
 
 ## Instalando Dependências
 
@@ -37,10 +47,23 @@ Adquiri essas habilidades ao desenvolver esse projeto:
   git clone git@github.com:Andreyrvs/29-trybers-and-dragons.git
   ```
 
+> Docker
+
+  :heavy_exclamation_mark: Rode o serviço **node** com o comando.
+
+  ```bash
+  docker-compose up -d
+  ```
+
+  > Esses serviços irão inicializar um container chamado `trybers_and_dragons`.
+
+  ```bash
+  docker exec -it trybers_and_dragons bash
+  ```
+
   > Back-end
 
   ```bash
-  cd 29-trybers-and-dragons
   npm install
   ```
 
@@ -49,13 +72,11 @@ Adquiri essas habilidades ao desenvolver esse projeto:
 - Para rodar o Back-end:
 
   ```bash
-  cd api/ && npm start
+   npm start
   ```
 
-## Executando Testes
+  - Modo devenvolvedor:
 
-- Para rodar todos os testes:
-
-  ```bash
-  npm test
-  ```
+    ```bash
+    npm run dev
+    ```
